@@ -60,8 +60,8 @@ deadline: 15/4/2025
 - Where tkb.ngay Between @fromDate and @toDate chỉ ấy dữ liệu các buổi học được truyền qua tham số
 ![image](https://github.com/user-attachments/assets/7b1ba006-7939-467f-b388-64a6597c6142)
 - truyền dữ liệu giảng dạy muốn truy vấn
+  
 ![image](https://github.com/user-attachments/assets/9f3e1887-4ffe-4e3e-9d41-03f404cfc2fa)
-
 ## TRUY VẤN THÔNG TIN HOÀN CHỈNH
 ![image](https://github.com/user-attachments/assets/df71baea-43c1-4400-ac90-16aedf2bf319)
 
