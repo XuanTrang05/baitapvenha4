@@ -52,19 +52,28 @@ deadline: 15/4/2025
   - giờ vào lớp( tính theo tiết bắt đầu)
   - giờ ra lớp( tính theo tiết kêt thúc)
   - ngày dạy
-![image](https://github.com/user-attachments/assets/d252a275-f744-46e2-a18f-c7b62f857fb9)
+    
+![image](https://github.com/user-attachments/assets/baeb775d-3cbe-4f64-a8c4-6c81ac60b1fc)
+
 ## Select các cột muốn hiện thị
-- From dbo.TKB T : bảng tkb chứa thông tin magv, mamon,tietbatdau,tietketthuc,ngay
-- Join dbo.gv gv ON tkb.magv=gv.magv : kết nối với bảng gv để lấy thông tin giảng viên
-- Join dbo.tiethoc giovao ON tkb.tietbatdau=giovaotiet
-- Join dbo.tiethoc giora ON tkb.tietketthuc=gioratiet
-- Where tkb.ngay Between @fromDate and @toDate chỉ ấy dữ liệu các buổi học được truyền qua tham số
-![image](https://github.com/user-attachments/assets/7b1ba006-7939-467f-b388-64a6597c6142)
+- from TKB : bảng tkb chứa thông tin 
+- JOIN  gv gv ON tkb.magv = gv.magv : kết nối với bảng gv để lấy thông tin giảng viên
+- Join dbo.tiethoc giovao ON tkb.tietbatdau=giovaotiet : thời gian bắt đầu tiết học
+- Join dbo.tiethoc giora ON tkb.tietketthuc=gioratiet : thời gian kết thúc tiết học
+- WHERE 
+    CAST(CONVERT(varchar, tkb.ngay, 23) + ' ' + tg2.GioRa AS DATETIME) > @datetime1 
+    AND 
+    CAST(CONVERT(varchar, tkb.ngay, 23) + ' ' + tg1.GioVao AS DATETIME) < @datetime2
+  tìm các tiết học có thời gian diễn ra giao nhau với khoảng thời gian được truyền vào time 1 và time2
+
+![image](https://github.com/user-attachments/assets/093096df-3f26-4424-abda-db4507fe9c6a)
+
 - truyền dữ liệu giảng dạy muốn truy vấn
   
-![image](https://github.com/user-attachments/assets/9f3e1887-4ffe-4e3e-9d41-03f404cfc2fa)
+![image](https://github.com/user-attachments/assets/40acfcce-6177-455b-a428-a06d8327e6e9)
 ## TRUY VẤN THÔNG TIN HOÀN CHỈNH
-![image](https://github.com/user-attachments/assets/df71baea-43c1-4400-ac90-16aedf2bf319)
+![image](https://github.com/user-attachments/assets/7e19515b-e336-4343-b758-43ddc5bc30f8)
+
 
 
 
