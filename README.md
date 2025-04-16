@@ -40,8 +40,9 @@ deadline: 15/4/2025
 --Trả lời câu hỏi : Từ khoảng thời gian từ datetime1 đến datetime2, những giảng viên đang bận giảng dạy là những người có lịch dạy (tiết học) được ghi nhận trong bảng thời khóa biểu (TKB) nằm trong khoảng thời gian đó. Những giảng viên đang bận giảng dạy trong khoảng thời gian từ datetime1 đến datetime2 là những giảng viên có mã giảng viên (magv) xuất hiện trong bảng thời khóa biểu (TKB), với ngày giảng dạy (ngay) nằm trong khoảng thời gian được chỉ định. Các giảng viên này đang đảm nhiệm các tiết học trong thời gian đó nên được coi là đang bận giảng dạy.
 ## CODE
 * Khai báo chương trình
-* Sử dụng tham số kiểu date : @fromDate và @toDate để lọc ngày giảng dạy
-![image](https://github.com/user-attachments/assets/75967fed-437b-493f-bb6c-284b037cce5a)
+* Sử dụng tham số kiểu date : lọc ngày giảng dạy
+![image](https://github.com/user-attachments/assets/f37cd339-f4d8-4dfd-9603-c665f235b293)
+
 * nhập thời gian bắt đầu tiết học và thời gian kết thúc tiết học để đổi số tiết thành giờ cụ thể ( giờ vào- giờ ra)
 ![image](https://github.com/user-attachments/assets/6c31463d-6a61-4f73-a980-3f6c2946f87c)
 * truy vấn các thông tin lịch giảng dạy của các giảng viên trong khoảng thời gian xác định bao gồm
