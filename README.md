@@ -58,8 +58,9 @@ deadline: 15/4/2025
 ## Select các cột muốn hiện thị
 - from TKB : bảng tkb chứa thông tin 
 - JOIN  gv gv ON tkb.magv = gv.magv : kết nối với bảng gv để lấy thông tin giảng viên
-- Join dbo.tiethoc giovao ON tkb.tietbatdau=giovaotiet : thời gian bắt đầu tiết học
-- Join dbo.tiethoc giora ON tkb.tietketthuc=gioratiet : thời gian kết thúc tiết học
+- JOIN monhoc mh ON tkb.mamon = mh.mamon : lấy thông tin môn học
+- JOIN TietGio tg1 ON tkb.tietbatdau = tg1.tiet : thời gian bắt đầu tiết học
+- JOIN TietGio tg2 ON tkb.tietketthuc = tg2.tiet : Thời gian kết thúc tiết học
 - WHERE 
     CAST(CONVERT(varchar, tkb.ngay, 23) + ' ' + tg2.GioRa AS DATETIME) > @datetime1 
     AND 
