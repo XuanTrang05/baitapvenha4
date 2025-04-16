@@ -41,12 +41,12 @@ deadline: 15/4/2025
 ## CODE
 * Khai báo chương trình
 * Sử dụng tham số kiểu date : lọc ngày giảng dạy
+  
 ![image](https://github.com/user-attachments/assets/f37cd339-f4d8-4dfd-9603-c665f235b293)
 
 * nhập thời gian bắt đầu tiết học và thời gian kết thúc tiết học để đổi số tiết thành giờ cụ thể ( giờ vào- giờ ra)
-![image](https://github.com/user-attachments/assets/6c31463d-6a61-4f73-a980-3f6c2946f87c)
+![image](https://github.com/user-attachments/assets/23de293a-597d-4f0a-90c3-5b83d70ab30d)
 * truy vấn các thông tin lịch giảng dạy của các giảng viên trong khoảng thời gian xác định bao gồm
-  - mã giảng viên
   - tên giảng viên
   - môn dạy
   - giờ vào lớp( tính theo tiết bắt đầu)
